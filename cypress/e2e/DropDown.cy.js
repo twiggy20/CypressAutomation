@@ -1,18 +1,14 @@
-
-
-
 describe('handle dropdowns', ()=>{
 
-
-    it.skip('Dropdown with selects',()=>{
-        cy.visit("https://www.zoho.com/commerce/free-demo.html")
+    it('Dropdown with selects',()=>{
+        cy.visit("https://www.zoho.com/commerce/free-demo.html", { timeout: 120000 })
         cy.get('#zcf_address_country')//locate the dropdown element
         .select('Zambia')//select an option from the dropdown element
         .should('have.value', 'Zambia')
     })
 
-    it.skip('Dropdown without select',()=>{
-        cy.visit("https://www.dummyticket.com/dummy-ticket-for-visa-application/")
+    it('Dropdown without select',()=>{
+        cy.visit("https://www.dummyticket.com/dummy-ticket-for-visa-application/", { timeout: 120000 })
         cy.get('#select2-billing_country-container')//locate the dropdown element
         .click()//select an option from the dropdown element
         cy.get('.select2-search__field').type('zambia').type('{enter}')
@@ -20,7 +16,7 @@ describe('handle dropdowns', ()=>{
    
     })
 
-    it.skip('Auto suggestion Dropdown',()=>{
+    it('Auto suggestion Dropdown',()=>{
         cy.visit("https://www.wikipedia.org/")
         cy.get('#searchInput').type('Delhi')//locate the dropdown element
         cy.get( '.suggestion-title').contains('Delhi University').click()//locate a particular suggestion option

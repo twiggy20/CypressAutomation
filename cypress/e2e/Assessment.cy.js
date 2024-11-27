@@ -81,14 +81,10 @@ describe ("My Test", ()=>{
         cy.get(':nth-child(3) > .chakra-input__group > #password').type('Password1@')
         cy.get(':nth-child(5) > .chakra-input__group > #password').type('P@ssword1')
         cy.get("button[type='submit']").click()
-       // cy.get(':nth-child(3) > .chakra-input__group > #password').invoke('val').should('match', /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}|:"<>?`\-=[\]\\;',./]).{8,}$/);
-
-        
+       // cy.get(':nth-child(3) > .chakra-input__group > #password').invoke('val').should('match', /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}|:"<>?`\-=[\]\\;',./]).{8,}$/); 
     })
 
       //  cy.get(':nth-child(3) > .chakra-input__group > #password').invoke('val').should('match', /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}|:"<>?`\-=[\]\\;',./]).{8,}$/);
-
-
     })
     
 
