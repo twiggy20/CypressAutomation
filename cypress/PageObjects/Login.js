@@ -1,6 +1,5 @@
 class login {
-    //usernameElement=':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input'
-    usernameElement="input[@placeholder='Username']"
+    usernameElement=':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input'
     passwordElement= ':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input'
     buttonElement='.oxd-button'
     sucessText=".oxd-topbar-header-title"
