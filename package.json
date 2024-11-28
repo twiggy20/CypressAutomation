@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "cypress": "^13.16.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "stream-browserify": "^3.0.0",
+    "xpath": "^0.0.34"
+  }
+}
